@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <string name="phoneTypeWork">Company</string>
-    <string name="phoneTypeFaxWork">Fax</string>
-    <string name="emailTypeWork">Company</string>
-    <string name="eventTypeAnniversary">Anniversary</string>
-    <string name="postalTypeWork">Company</string>
-    <string name="sms_short_code_confirm_message">Are you sure want to send this message?</string>
-    <string name="data_usage_mobile_limit_title">"Mobile data deactivated"</string>
-    <string name="data_usage_limit_body">"Touch to enable""</string>
-    <string name="configure_input_methods">"Set up input method"</string>
-    <string name="select_input_method">"Select input method"</string>
-    <string name="config_webViewPackageName">com.android.webview</string>
-    <string name="default_sms_application">com.android.mms</string>
+    <string name="android_system_label">Flyme system service</string>
+    <string name="anr_activity_application">"%2$s isn't responding,Do you want to close it?"</string>
+    <string name="anr_activity_process">"Activity %1$s isn't responding, do you want to close it?"</string>
+    <string name="anr_application_process">%1$s is not responding, shut it down?</string>
+    <string name="anr_process">"Process %1$s isn't responding,Do you want to close it?"</string>
+    <string name="android_upgrading_title">System is upgrading…</string>
+    <string name="android_start_title">System is starting…</string>
+    <string name="wifi_available_sign_in">Login to WLAN</string>
+    <string name="sms_short_code_confirm_message">Sent the message?</string>
+    <string name="usb_storage_message">"You've connected to your computer via USB. Touch the button below if you want to copy files between your computer and your Android's SD card."</string>
+    <string name="usb_storage_error_message">A problem occurred while using your SD card as USB mass storage.</string>
+    <string name="usb_storage_stop_message">"Before turning off USB storage, unmount (\"eject\") your Android's SD card from your computer."</string>
+    <string name="dlg_error_title">USB operation failed</string>
+    <string name="usb_mtp_notification_title">Transfer files via cable</string>
+    <string name="usb_ptp_notification_title">Photos can be transferred via PC</string>
+    <string name="usb_notification_message">Touch for other USB options</string>
+    <string name="extmedia_format_title">Format SD card?</string>
+    <string name="extmedia_format_message">All data on your card will be lost.</string>
+    <string name="adb_active_notification_message">Touch to disable USB debugging</string>
+    <string name="select_input_method">Select input method</string>
+    <string name="configure_input_methods">Set up input method</string>
+    <string name="ext_media_checking_notification_title">Preparing SD card</string>
+    <string name="ext_media_nofs_notification_title">Blank SD card</string>
+    <string name="ext_media_nofs_notification_message">SD card is blank or uses unsupported filesystem.</string>
+    <string name="ext_media_unmountable_notification_title">Damaged SD card</string>
+    <string name="ext_media_unmountable_notification_message">SD card is damaged. Try reformatting it.</string>
+    <string name="ext_media_badremoval_notification_title">SD card unexpectedly removed</string>
+    <string name="ext_media_badremoval_notification_message">Unmount SD card before removing to avoid data loss.</string>
+    <string name="ext_media_safe_unmount_notification_title">SD card is safely removed</string>
+    <string name="ext_media_safe_unmount_notification_message">You can safely remove SD card.</string>
+    <string name="ext_media_nomedia_notification_title">Removed SD card</string>
+    <string name="ext_media_nomedia_notification_message">SD card removed. Insert a new one.</string>
+    <string name="ellipsis">...</string>
     <add-resource type="string" name="description_direction_right" />
-    <string name="description_direction_right">@null</string>
     <add-resource type="string" name="description_direction_left" />
-    <string name="description_direction_left">@null</string>
     <add-resource type="string" name="description_target_search" />
-    <string name="description_target_search">@null</string>
     <add-resource type="string" name="description_direction_up" />
     <string name="description_direction_up">@null</string>
-    <string name="ellipsis">…</string>
-    <string name="ellipsis_two_dots">‥</string>
+    <string name="description_direction_left">@null</string>
+    <string name="description_direction_right">@null</string>
+    <string name="description_target_search">@null</string>
+
 </resources>

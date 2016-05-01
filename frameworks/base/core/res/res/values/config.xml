@@ -22,108 +22,57 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Do not translate. Defines the slots for the right-hand side icons.  That is to say, the
          icons in the status bar that are not notifications. -->
+	
     <string-array name="config_statusBarIcons">
-        <item><xliff:g id="id">bluetooth</xliff:g></item>
-        <item><xliff:g id="id">vpn</xliff:g></item>
-        <item><xliff:g id="id">speakerrecord</xliff:g></item>
-        <item><xliff:g id="id">ime</xliff:g></item>
-        <item><xliff:g id="id">sync_failing</xliff:g></item>
-        <item><xliff:g id="id">sync_active</xliff:g></item>
-        <item><xliff:g id="id">cast</xliff:g></item>
-        <item><xliff:g id="id">location</xliff:g></item>
-        <item><xliff:g id="id">nfc</xliff:g></item>
-        <item><xliff:g id="id">tty</xliff:g></item>
-        <item><xliff:g id="id">speakerphone</xliff:g></item>
-        <item><xliff:g id="id">zen</xliff:g></item>
-        <item><xliff:g id="id">mute</xliff:g></item>
-        <item><xliff:g id="id">volume</xliff:g></item>
-        <item><xliff:g id="id">wifi</xliff:g></item>
-        <item><xliff:g id="id">cdma_eri</xliff:g></item>
-        <item><xliff:g id="id">data_connection</xliff:g></item>
-        <item><xliff:g id="id">phone_evdo_signal</xliff:g></item>
-        <item><xliff:g id="id">phone_signal</xliff:g></item>
-        <item><xliff:g id="id">battery</xliff:g></item>
-        <item><xliff:g id="id">alarm_clock</xliff:g></item>
-        <item><xliff:g id="id">secure</xliff:g></item>
-        <item><xliff:g id="id">clock</xliff:g></item>
+        <item>ime</item>
+        <item>sync_failing</item>
+        <item>sync_active</item>
+        <item>cast</item>
+        <item>hotspot</item>
+        <item>location</item>
+        <item>bluetooth</item>
+        <item>nfc</item>
+        <item>tty</item>
+        <item>speakerphone</item>
+        <item>headset</item>
+        <item>zen</item>
+        <item>mute</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>cdma_eri</item>
+        <item>data_connection</item>
+        <item>phone_evdo_signal</item>
+        <item>phone_signal</item>
+        <item>battery</item>
+        <item>alarm_clock</item>
+        <item>secure</item>
+        <item>clock</item>
     </string-array>
 
-    <string-array name="config_locationProviderPackageNames" translatable="false">
+    <string-array name="config_locationProviderPackageNames">
         <item>com.android.location.fused</item>
         <item>com.google.android.gms</item>
         <item>com.baidu.map.location</item>
     </string-array>
 
-    <integer name="config_networkPolicyDefaultWarning">100</integer>
-    <integer name="config_criticalBatteryWarningLevel">7</integer>
-    <integer name="config_shutdownBatteryTemperature">600</integer>
-    <integer name="config_lowBatteryWarningLevel">15</integer>
-    <integer name="config_lowBatteryCloseWarningBump">5</integer>
-    <dimen name="config_viewMaxFlingVelocity">3000dp</dimen>
+    <add-resource type="attr" name="needAccessControl" />
+    <attr name="needAccessControl" format="boolean" />
+
+    <color name="background_material_light">#fffafafa</color>
+    <color name="material_deep_teal_200">#ff32a5e7</color>
+    <color name="material_deep_teal_500">#ff32a5e7</color>
+
     <bool name="config_safe_media_volume_enabled">false</bool>
 
 
-    <add-resource type="array" name="mz_preferred_network_mode_summary_phone0" />
-    <string-array name="mz_preferred_network_mode_summary_phone0">
-        <item>"2G only"</item>
-        <item>"3G first"</item>
-        <item>"4G first"</item>
-    </string-array>
-    <add-resource type="array" name="mz_preferred_network_mode_summary_phone1" />
-    <string-array name="mz_preferred_network_mode_summary_phone1">
-        <item>"2G only"</item>
-        <item>"3G first"</item>
-        <item>"4G first"</item>
-    </string-array>
-    <!-- Array of network mode values, you should config the array according to your device -->
-    <!-- ******************************************************************
-             Network Mode                        Value
-         GSM/WCDMA preferred                      0
-         GSM only                                 1
-         WCDMA only                               2
-         GSM/WCDMA auto                           3
-         CDMA/EvDo auto                           4
-         CDMA only                                5
-         EvDo only                                6
-         CDMA/EvDo/GSM/WCDMA                      7
-         CDMA + LTE/EvDo                          8
-         GSM/WCDMA/LTE                            9
-         LTE/GSM/CDMA                             10
-         LTE only                                 11
-         LTE/WCDMA                                12
-         TD-SCDMA only                            13
-         TD-SCDMA/WCDMA                           14
-         TD-SCDMA/LTE                             15
-         TD-SCDMA/GSM                             16
-         TD-SCDMA/GSM/LTE                         17
-         TD-SCDMA/GSM/WCDMA                       18
-         TD-SCDMA/WCDMA/LTE                       19
-         TD-SCDMA/GSM/WCDMA/LTE                   20
-         TD-SCDMA/GSM/WCDMA/CDMA/EVDO             21
-         TD-SCDMA/LTE/GSM/WCDMA/CDMA/EVDO         22
-         ******************************************************************-->
-    <add-resource type="array" name="mz_gsm_network_mode_values_phone0" />
-    <string-array name="mz_gsm_network_mode_values_phone0" translatable="false">
-        <item>"1"</item>
-        <item>"0"</item>
-        <item>"9"</item>
-    </string-array>
-    <add-resource type="array" name="mz_gsm_network_mode_values_phone1" />
-    <string-array name="mz_gsm_network_mode_values_phone1" translatable="false">
-        <item>"1"</item>
-        <item>"0"</item>
-        <item>"9"</item>
-    </string-array>
-    <add-resource type="array" name="mz_cdma_network_mode_values_phone0" />
-    <string-array name="mz_cdma_network_mode_values_phone0" translatable="false">
-        <item>"5"</item>
-        <item>"21"</item>
-        <item>"22"</item>
-    </string-array>
-    <add-resource type="array" name="mz_cdma_network_mode_values_phone1" />
-    <string-array name="mz_cdma_network_mode_values_phone1" translatable="false">
-        <item>"5"</item>
-        <item>"21"</item>
-        <item>"22"</item>
-    </string-array>
+    <dimen name="config_viewMaxFlingVelocity">2300.0dip</dimen>
+    <dimen name="toast_y_offset">80.0dip</dimen>
+    <dimen name="text_size_subhead_material">18.0sp</dimen>
+    <dimen name="dialog_list_padding_vertical_material">0.0dip</dimen>
+
+    <integer name="config_criticalBatteryWarningLevel">7</integer>
+    <integer name="config_shutdownBatteryTemperature">600</integer>
+    <integer name="config_networkPolicyDefaultWarning">100</integer>
+
 </resources>
+
